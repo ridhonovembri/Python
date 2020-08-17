@@ -21,7 +21,7 @@ print(list_sepeda)
 
 print('*'*50)
 
-#tuples
+#tuples (after create cannot modified)
 tuples_motor = ("yamaha","honda","suzuki")
 tuples_mobil  = ("toyota","daihatsu","mitsubishi")
 
@@ -34,7 +34,7 @@ print("join 2 tuples", tuples_motor + tuples_mobil)
 
 print('*'*50)
 
-#sets
+#sets (cannot orderable and indexing)
 sets_komputer = {"HP","DELL","Toshiba","Asus"}
 
 for x in sets_komputer:
@@ -45,3 +45,53 @@ for x in sets_komputer:
 
 sets_komputer.add("Samsung")
 print(sets_komputer)
+
+print('*'*50)
+
+#Dictionary
+dict_AC = {
+    'merk':'Sharp',
+    'type':'sayonara',
+    'watt':220
+}
+
+print(dict_AC)
+print(dict_AC['merk'])
+print(dict_AC.get("watt"))
+
+for x in dict_AC:
+    print('key pada dict_ac=', x)
+
+#change value dict
+dict_AC['type'] = 'tahan panas'
+
+print(dict_AC)
+
+for x in dict_AC:
+    print('values pada dict_ac:',dict_AC[x])
+
+for x in dict_AC.values():
+    print(x)
+
+for x,y in dict_AC.items():
+    print(x,':',y)
+
+print(len(dict_AC))
+
+#nested dict
+dict_sepeda = {
+    "sepeda1":{
+    "merk":"polygon",
+    "gearset":"3x9"
+    },
+    "sepeda2":{
+    "merk":"united",
+    "gearset":"3x7"
+    },
+    "sepeda3":{
+    "merk":"merida",
+    "gearset":"2x10"
+    }
+}
+
+print(dict_sepeda)
